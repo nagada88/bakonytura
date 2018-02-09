@@ -1,0 +1,27 @@
+﻿{% load staticfiles %}
+<html> 
+<head>
+    <title>Veszprém megyei barangolások</title>
+    <link rel="stylesheet" href="{% static 'css/stilus.css' %}">
+</head>
+<body>
+<div id="alap">
+<div id="fejlec">
+</div>
+<div id="nav">
+    <ul>
+    <li><a class="active" href="index.html" rel="external">főoldal</a></li>
+    <li><a href="hirek.html">hírek</a></li>
+    <li><a href="../trips.html">túraleírások</a></li>
+    <li><a href="program.html">programok</a></li>
+    <li><a href="tudnivalok.html">tudnivalók</a></li>
+    <li><a href="linkek.html">linkek</a></li>
+    <li><a href="kapcsolat.html">kapcsolat</a></li>
+    </ul>
+</div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

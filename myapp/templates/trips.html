@@ -1,0 +1,62 @@
+﻿{% load staticfiles %}
+<html> 
+<head>
+    <title>Veszprém megyei barangolások</title>
+    <link rel="stylesheet" href="{% static 'css/stilus.css' %}">
+</head>
+
+
+<body>
+<div id="alap">
+    <div id="fejlec">
+    </div>
+    
+<div id="nav">
+    <ul>
+    <li><a class="active" href="index.html" rel="external">főoldal</a></li>
+    <li><a href="tura.html">túraleírások</a></li>
+    <li><a href="program.html">programok</a></li>
+    <li><a href="tudnivalok.html">tudnivalók</a></li>
+    <li><a href="linkek.html">linkek</a></li>
+    <li><a href="kapcsolat.html">kapcsolat</a></li>
+    </ul>
+</div>
+<div>
+<div id="gyalogos">
+    <h2>Gyalogos túrák</h2><br />
+    <p class="szoveg">Gyalogtúrák nehézség szerint</p><br />
+    <ul>
+    {% for triptype in triptypes %}
+    <li>{{triptype}}</li>
+    {% endfor %}
+    </ul><br /><br />
+    <p class="szoveg">Gyalogtúrák tájegység szerint</p><br />
+    <ul>
+    <li><a href="gyalog_magas.html" >Magas-Bakony</a></li>
+    <li><a href="gyalog_balaton.html">Balaton-felvidék</a></li>
+    <li><a href="gyalog_deli.html">Déli-Bakony</a></li>
+    <li><a href="gyalog_keleti.html">Keleti-Bakony</a></li>
+    </ul>
+    <img id="terkep" src="{% static "/img/fokep2.jpg" %}"  alt="Veszprém megye térképe" ></img>
+</div>
+<div id="kerekparos">
+<h2>Kerékpáros túrák</h2><br />
+<p class="szoveg">Kerékpáros túrák nehézség szerint</p><br />
+<ul>
+<li><a href="bicikli_konnyu.html" >könnyű biciklis túrák</a></li>
+<li><a href="bicikli_kozepes.html">közepes biciklis túrák</a></li>
+<li><a href="bicikli_nehez.html">nehéz biciklis túrák</a></li>
+</ul><br /><br />
+<p class="szoveg">Kerékpáros túrák tájegység szerint</p><br />
+<ul>
+<li><a href="bicikli_magas.html" >Magas-Bakony</a></li>
+<li><a href="bicikli_balaton.html">Balaton-felvidék</a></li>
+<li><a href="bicikli_deli.html">Déli-Bakony</a></li>
+<li><a href="bicikli_keleti.html">Keleti-Bakony</a></li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>
+

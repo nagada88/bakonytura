@@ -1,0 +1,15 @@
+﻿{% extends 'main_template.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="hir">
+{% for object in objects %}
+    <p class="szoveg">{{object.content}}</p>
+    <p class="alairas">{{object.author}}
+    <br/>{{object.date}}
+<a href="{% url 'post_new' %}"><span>Bezony új hír link</span></a>
+    <hr /></p>
+{% endfor %}
+</div>
+{% endblock %}
+<hr /></p>
