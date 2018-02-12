@@ -1,7 +1,7 @@
 from django.db import models
 from django.http import HttpResponse
 
-class Entry(models.Model):
+class newsEntry(models.Model):
 
    content = models.TextField()
    author  = models.CharField(max_length = 50)

@@ -1,9 +1,9 @@
 from django import forms
 
-from .models import Entry
+from .models import newsEntry
 
 class PostForm(forms.ModelForm):
 
     class Meta:
-        model = Entry
-        fields = ('content', 'author','date')
+        model  = newsEntry
+        fields = ('content', 'author', 'date')

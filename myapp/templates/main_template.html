@@ -11,12 +11,12 @@
 <div id="nav">
     <ul>
     <li><a class="active" href="index.html" rel="external">főoldal</a></li>
-    <li><a href="hirek.html">hírek</a></li>
-    <li><a href="../trips.html">túraleírások</a></li>
-    <li><a href="program.html">programok</a></li>
-    <li><a href="tudnivalok.html">tudnivalók</a></li>
-    <li><a href="linkek.html">linkek</a></li>
-    <li><a href="kapcsolat.html">kapcsolat</a></li>
+    <li><a href="{% url 'news' %}">hírek</a></li>
+    <li><a href="{% url 'news' %}">túraleírások</a></li>
+    <li><a href="{% url 'news' %}">programok</a></li>
+    <li><a href="{% url 'news' %}">tudnivalók</a></li>
+    <li><a href="{% url 'news' %}">linkek</a></li>
+    <li><a href="{% url 'news' %}">kapcsolat</a></li>
     </ul>
 </div>
 

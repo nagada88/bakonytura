@@ -3,11 +3,11 @@
 
 {% block content %}
 <div class="hir">
-{% for object in objects %}
-    <p class="szoveg">{{object.content}}</p>
-    <p class="alairas">{{object.author}}
-    <br/>{{object.date}}
-<a href="{% url 'post_new' %}"><span>Bezony új hír link</span></a>
+<p class = "inputLabel"><a href="{% url 'post_new' %}" style="text-decoration:none"><span>Post new entry</span></a></p>
+{% for news in newsObjects %}
+    <p class="szoveg">{{news.content}}</p>
+    <p class="alairas">{{news.author}}
+    <br/>{{news.date}}
     <hr /></p>
 {% endfor %}
 </div>

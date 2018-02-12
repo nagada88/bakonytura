@@ -243,6 +243,13 @@ p.alairas {  color: #b2c49c;
 			margin-right:50px;
 }
 
+p.inputLabel {  color: #b2c49c; 
+                font-family: mistral; 
+                text-align: left; 
+                font-size: 24px; 
+                margin-right:50px;
+}
+
 a.szovegkozi { color: #d0e98b;
                font-family: "Comic Sans MS";
 			   margin: auto;
