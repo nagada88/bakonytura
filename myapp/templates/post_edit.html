@@ -4,12 +4,8 @@
 <div class="hir">
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
-        {% for data in newsPostForm %}
-            <p class = "inputLabel"><label for="id_subject">{{data.label}}</label>
-            <input id="id_subject" type="text" name="{{data.label}}" maxlength="100" required /></p>
-            <!-- {{data.label}} -->
-            <!-- {{data.input}} -->   
-        {% endfor %}
+        {{newsPostForm.as_p}}
+
         <button type="submit" class="save btn btn-default">Save</button>
     </form>
 </div>

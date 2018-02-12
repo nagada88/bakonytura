@@ -264,5 +264,10 @@ a.galeria {margin-left: 40px;
           margin-right: 40px;
 		  }
 		  
+textarea {
+     width: 90%;
+}
+
+
 img{ margin-top: 10px;
 }
