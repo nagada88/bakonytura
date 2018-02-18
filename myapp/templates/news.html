@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block content %}
-<div class="hir">
+<div class="news">
 <p class = "inputLabel"><a href="{% url 'post_new' %}" style="text-decoration:none"><span>Post new entry</span></a></p>
 {% for news in newsObjects %}
     <p class="szoveg">{{news.content}}</p>

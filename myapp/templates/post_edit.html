@@ -1,12 +1,37 @@
 ﻿{% extends 'main_template.html' %}
+{% load widget_tweaks %}
 
 {% block content %}
-<div class="hir">
-    <h1>New post</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{newsPostForm.as_p}}
+<script>
+function insertDate() {
+    document.getElementById('id_date').value = Date();
+}
+</script>
 
-        <button type="submit" class="save btn btn-default">Save</button>
+<div class="news">
+    <h1>New post</h1>
+    <form method="POST">{% csrf_token %}
+    <div class="form">
+    
+        {% for field in newsPostForm %}
+            <span class = 'form-label'>{{ field.label_tag }}</span>
+                 {{ field|add_class:'form-control' }}
+                 {% for error in field.errors %}
+                  <span class="help-block">{{ error }}</span>
+                {% endfor %}
+            <br><br>           
+         {% endfor %}
+     </div>
+     
+    <div class="form">
+      <button type="submit">
+        <span></span> Save
+      </button>
+      <button>
+      <a href="{% url 'news' %}" class="button">Cancel</a></button>
+      <button type="button" onclick="insertDate()">Try it</button>
+    </div>
+    
     </form>
 </div>
 {% endblock %}

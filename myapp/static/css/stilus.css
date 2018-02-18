@@ -1,122 +1,81 @@
-body {
-         background: #1b1818;
+/* ---- element selectors ---- */
+body { background: #1b1818;
+       margin: 0 !important;
+       padding: 0 !important;
 }
 
-#alap {
-         position: absolute;
-		 top: 0px; 
-		 left: 50px; 
-		 width: 900px; 
-		 background: #1b1818;
-         margin-top: 0px;
+h1{ text-align:  left;
+    font-family: Georgia;
+	font-size:   16px;
+	color:       #43ab5e;
+    padding-left: 0px;
+    margin-left:  10%;
+/*     border:       solid;
+    border-color: white; */
 }
-#fejlec { height: 200px;
-          background-image:url("/static/img/fokep2.jpg"); 
-		  padding-top: 0px; 
-		  margin-top: 20px;
-          border-radius: 30px;
-          -moz-border-radius: 30px;
-          -webkit-border-radius: 30px;
-}
-#tartalom {   background: #332b29;  
-             margin-top: 20px; 
-			 margin-bottom: 20px;
-			 border: 3 3 3 3; 
-			 border-color: #949291;
-             border-radius: 30px;
-             -moz-border-radius: 30px;
-             -webkit-border-radius: 30px;
-		     padding-top: 30px;
-		     padding-bottom: 50px;
-		     }
 
-#nav li { display: inline; 
+h2 { text-align:  left;
+   	font-family:  Corbel;
+	font-size:    20px;
+	color:        #d0e98b;
+	text-shadow:  5px;
+	margin:       30px 40px 10px 40px;
+}
+		
+h3 { text-align:  left;
+    font-family: Georgia;
+	font-size:   16px;
+	color:       #43ab5e;
+	margin:      auto 40px auto 20px;
+}
+
+h4 { text-align:  left;
+     font-family: "Comic Sans MS";
+	 font-size:   14px;
+	 color:       #43ab5e;
+	 margin:      20px 50px 20px 40px;
+}
+
+textarea { width: 90%;
+}
+
+img{ margin-top: 10px;
+}
+
+hr {margin: 10px 40px 10px 40px
+}
+	
+.button {
+            -moz-linear-border-radius:  5px;
+            -moz-border-radius:         5px;
+            -webkit-border-radius:      5px;
+}
+
+/* ---- id selectors ---- */
+#main { position:   relative;
+        margin:     0 auto 0;
+		max-width:  900px; 
+		background: #1b1818;
+}
+
+#header { height:                   200px;
+          background-image:         url("/static/img/fokep2.jpg"); 
+          border-radius:            30px;
+          -moz-border-radius:       30px;
+          -webkit-border-radius:    30px;
+}
+
+#navigation li { display: inline; 
         float: left;
  		margin: 0;
         }
 
-#nav ul {list-style: none;
+#navigation ul {list-style: none;
         margin: 0 auto; 
 		width: 900px;
          }
 
-h1{ text-align: left;
-    font-family: Georgia;
-	font-size: 16px;
-	color: #43ab5e;
-	margin: 20px 50px 20px 40px;
-	}
-
-
-h2 {text-align: left;
-   	font-family: Corbel;
-	font-size: 20px;
-	color: #d0e98b;
-	text-shadow: 5px;
-	margin: 30px 40px 10px 40px;
-	    }
-		
-h3 {text-align: left;
-    font-family: Georgia;
-	font-size: 16px;
-	color: #43ab5e;
-	margin: auto 40px auto 20px;
-}
-
-h3.link {
-    color: #43ab5e;
-	margin: 5px 40px auto 40px;
-}
-
-h4 {text-align: left;
-    font-family: "Comic Sans MS";
-	font-size: 14px;
-	color: #43ab5e;
-	margin: 20px 50px 20px 40px;
-}
-
-h3:hover, h3:active {
-         color: #e9f0ee;
-		 background: #014834;
-		 -moz-linear-border-radius: 10px;
-         -moz-border-radius: 10px;
-         -webkit-border-radius: 10px;
-}
-		
-#terkep {align:left;
-         float:left;
-         margin: 10px 10px 10px 0px;
-         border-radius: 30px;
-         -moz-border-radius: 30px;
-         -webkit-border-radius: 30px;
-		  }
-		 
-p.kep { text-align: center;
-          }		 
-		  
-hr {margin: 10px 40px 10px 40px
-}
-		 
-		 
-p.szoveg {	color: #8e8c8b;
-            font-family: Corbel;
-			margin: 0px 40px 0px 40px;
-			text-shadow: 3;
-			text-align: left;
-			font-size: 18px; line-height: 1.6a;
-          }
-		  
-p.program{   color: #8e8c8b;
-            font-family: "Tw Cen MT";
-			font-weight: 600;
-			margin: 0px 40px 0px 40px;
-			text-shadow: 3;
-			text-align: left;
-			font-size: 14px; line-height: 1.4;
-          }
-
-
-#nav {
+#navigation {
     background: #b9d134;
     font-size:16;
 	font-family: "Comic Sans MS";
@@ -130,20 +89,145 @@ p.program{   color: #8e8c8b;
     -webkit-border-radius: 10px;
 }
 
+#map { align:                 left;
+       float:                 left;
+       margin:                10px 10px 10px 0px;
+       border-radius:         30px;
+       -moz-border-radius:    30px;
+       -webkit-border-radius: 30px;
+}
 
-#nav a:link, #nav a:visited {
-    color: #3b3e15;
-    display: inline-block;
-    height: 30px;
-    padding: 5px 1em;
-    text-decoration: none;
-	}
+/* ---- class selectors ---- */
+h3.link { color:  #43ab5e;
+          margin: 5px 40px auto 40px;
+}
 
- #nav a:hover, #nav a:active,
- #nav .active a:link, #nav .active a:visited {
-    color: #fff;
-    text-shadow: none;
-	}
+p.kep { text-align: center;
+}		 
+
+p.szoveg {	color:       #8e8c8b;
+            font-family: Corbel;
+			margin:      0px 40px 0px 40px;
+			text-shadow: 3;
+			text-align:  left;
+			font-size:   18px; 
+            line-height: 1.6a;
+}
+		  
+p.program{  color:       #8e8c8b;
+            font-family: "Tw Cen MT";
+			font-weight: 600;
+			margin:      0px 40px 0px 40px;
+			text-shadow: 3;
+			text-align:  left;
+			font-size:   14px; 
+            line-height: 1.4;
+}
+
+.bold {color:       #8e8c8b;}
+
+.form-label {color:       #43ab5e;
+            font-family:  Cambria;
+            line-height:  1.6a;/* 
+            border:       solid;
+            border-color: white; */
+}
+
+.form{ margin: auto;
+       width: 80%;
+/*        border: solid;
+       border-color: white; */
+       padding-left: 0px;
+       margin-left: 10%;    
+}
+
+.form-control
+{
+margin: auto;
+width: 100%;
+-moz-linear-border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+/* border: solid;
+border-color: white; */
+}
+
+.clearer {clear:both;
+}
+
+.felsorolo {font-family: "Comic Sans MS"; 
+            font-size: 16px; 
+			margin-right: 200px;
+}
+
+.news {background: #332b29; 
+      margin-top: 25px; 
+	  padding: 15px 30px 15px 15px;
+      -moz-linear-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+}
+
+.news h1{ font-family: Cambria;
+          font-size: 20px;
+}
+
+p.alairas {  color: #b2c49c; 
+            font-family: mistral; 
+			text-align: right; 
+			font-size: 24px; 
+			margin-right:50px;
+}
+
+
+p.inputLabel {  color: #b2c49c; 
+                font-family: castellar; 
+                text-align: left; 
+                font-size: 24px; 
+                margin: 0px 40px 0px 40px;
+                
+}
+
+a.szovegkozi { color: #d0e98b;
+               font-family: "Comic Sans MS";
+			   margin: auto;
+			   text-align: left;
+			   font-size: 18px;
+			   line-height: 1.4;
+}
+
+a.galeria {margin-left: 40px;
+          margin-right: 40px;
+		  }
+		  
+
+
+/* ---- state selectors ---- */
+#navigation a:link, #navigation a:visited {
+    color:              #3b3e15;
+    display:            inline-block;
+    height:             30px;
+    padding:            5px 1em;
+    text-decoration:    none;
+}
+
+#navigation a:hover, #navigation a:active,
+#navigation .active a:link, #navigation .active a:visited {
+    color:          #fff;
+    text-shadow:    none;
+}
+
+h3:hover, h3:active {
+         color: #e9f0ee;
+		 background: #014834;
+		 -moz-linear-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -webkit-border-radius: 10px;
+}
+		
+		  
+	 
+		 
 
 #gyalogos { width: 440px; 
             margin-right:10px; 
@@ -220,54 +304,16 @@ p.program{   color: #8e8c8b;
 #infodoboz a:hover, #infodoboz a:active{ color: #332b29;
 			 }			 
 
-.clearer {clear:both;
-}
 
-.felsorolo {font-family: "Comic Sans MS"; 
-            font-size: 16px; 
-			margin-right: 200px;
-}
-
-.hir  {background: #332b29; 
-      margin-top: 25px; 
-	  padding: 15px 30px 15px 15px;
-      -moz-linear-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-			 }
-
-p.alairas {  color: #b2c49c; 
-            font-family: mistral; 
-			text-align: right; 
-			font-size: 24px; 
-			margin-right:50px;
-}
-
-
-p.inputLabel {  color: #b2c49c; 
-                font-family: castellar; 
-                text-align: left; 
-                font-size: 24px; 
-                margin: 0px 40px 0px 40px;
-                
-}
-
-a.szovegkozi { color: #d0e98b;
-               font-family: "Comic Sans MS";
-			   margin: auto;
-			   text-align: left;
-			   font-size: 18px;
-			   line-height: 1.4;
-}
-
-a.galeria {margin-left: 40px;
-          margin-right: 40px;
-		  }
-		  
-textarea {
-     width: 90%;
-}
-
-
-img{ margin-top: 10px;
-}
+/* #tartalom {   background: #332b29;  
+             margin-top: 20px; 
+			 margin-bottom: 20px;
+			 border: 3 3 3 3; 
+			 border-color: #949291;
+             border-radius: 30px;
+             -moz-border-radius: 30px;
+             -webkit-border-radius: 30px;
+		     padding-top: 30px;
+		     padding-bottom: 50px;
+		     }
+ */
